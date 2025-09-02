@@ -156,6 +156,16 @@ main {}
 
 section {
     scroll-snap-align: start;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:first-child {
+    display: block;
+    align-items: unset;
+    justify-content: unset;
 }
 
 #helloworld,
@@ -180,8 +190,8 @@ section {
 }
 
 #block {
-    margin-top: 28em;
-    margin-bottom: 10em;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,7 +304,10 @@ section {
     color: var(--accent-primary);
     
 }
+.green{
+    color: var(--accent-primary);
 
+}
 
 .profile-image {
     width: 320px;
